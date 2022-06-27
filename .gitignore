@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Authentication.POC.API.APIKey/bin/Debug/net6.0
+/Authentication.POC.API.APIKey/obj
+/Authentication.POC.API.JWT/bin/Debug/net6.0
+/Authentication.POC.API.JWT/obj
+/Authentication.POC.Web/Client/bin/Debug/net6.0
+/Authentication.POC.Web/Client/obj
+/Authentication.POC.Web/Server/bin/Debug/net6.0
+/Authentication.POC.Web/Server/obj
+/Authentication.POC.Web/Shared/obj
+/Authentication.POC.Web/Shared/bin/Debug/net6.0
