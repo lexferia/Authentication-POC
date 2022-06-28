@@ -1,0 +1,39 @@
+﻿@page "/counter"
+@using System.Security.Claims
+
+<PageTitle>Counter</PageTitle>
+
+<AuthorizeView>
+    <Authorized>
+        @context.User.FindFirst(ClaimTypes.Name)?.Value (@context.User.FindFirst(ClaimTypes.Role)?.Value)
+    </Authorized>
+    <NotAuthorized>
+        The User is not authorized
+    </NotAuthorized>
+</AuthorizeView>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    [CascadingParameter]
+    private Task<AuthenticationState> AuthState { get; set; } = default!;
+
+    private int currentCount = 0;
+
+    private async void IncrementCount()
+    {
+        var authState = await AuthState;
+        if (authState?.User.Identity?.IsAuthenticated ?? false)
+        {
+            currentCount++;
+        }
+        else
+        {
+            currentCount--;
+        }
+    }
+}
