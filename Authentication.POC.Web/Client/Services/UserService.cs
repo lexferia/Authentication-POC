@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Authentication.POC.Web.Client.Services
 {
-    internal class UserService : IService<UserDTO, AddUserDTO, EditUserDTO>
+    internal class UserService : IUserService
     {
         public Task AddItem(AddUserDTO dto)
         {

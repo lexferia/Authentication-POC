@@ -8,8 +8,11 @@ using System.Threading.Tasks;
 
 namespace Authentication.POC.Web.Client.Services
 {
-    internal class RoleService : IService<RoleDTO, AddorEditRoleDTO, AddorEditRoleDTO>
+    internal class RoleService : IRoleService
     {
+        private readonly HttpClient _httpClient;
+        public RoleService(HttpClient httpClient) => _httpClient = httpClient;
+
         public Task AddItem(AddorEditRoleDTO dto)
         {
             throw new NotImplementedException();

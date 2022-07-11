@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "8a7904fb-dd2d-4459-a913-0b35d36909c9": {
+      "ProjectGuid": "8a7904fb-dd2d-4459-a913-0b35d36909c9",
+      "DisplayName": "Authentication.POC.Web.Client",
+      "ColorIndex": 0
+    },
+    "b627cdf3-fda8-40c7-b3ac-c098fa83219d": {
+      "ProjectGuid": "b627cdf3-fda8-40c7-b3ac-c098fa83219d",
+      "DisplayName": "Authentication.POC.API.JWT",
+      "ColorIndex": 1
+    },
+    "3d6b67b4-f177-4037-966f-0b8f436b61fa": {
+      "ProjectGuid": "3d6b67b4-f177-4037-966f-0b8f436b61fa",
+      "DisplayName": "Authentication.POC.Web.Shared",
+      "ColorIndex": 2
+    },
+    "d0670d08-47a7-4ba0-ad12-920aac58860a": {
+      "ProjectGuid": "d0670d08-47a7-4ba0-ad12-920aac58860a",
+      "DisplayName": "Authentication.POC.Web.Server",
+      "ColorIndex": 3
+    },
+    "0ecb3035-23da-41ca-8778-6784289b3645": {
+      "ProjectGuid": "0ecb3035-23da-41ca-8778-6784289b3645",
+      "DisplayName": "Authentication.POC.API.APIKey",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
